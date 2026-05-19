@@ -84,11 +84,13 @@ nav a:hover{
   display: flex;
   justify-content: left;
   cursor:pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .image-box:active {
   background-image: url('./img/lil puhri 2.png');
   cursor:pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 div.background {
@@ -123,4 +125,8 @@ div.transbox p {
     width: auto;
     padding: 10px 30px;
     color: #222222;
+}
+
+img {
+  -webkit-tap-highlight-color: transparent;
 }
