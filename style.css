@@ -93,30 +93,6 @@ nav a:hover{
   -webkit-tap-highlight-color: transparent;
 }
 
-div.background {
-  background: url(./img/home.png) repeat;
-  border: 2px solid black;
-  padding: 10px 10px;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-}
-
-div.transbox {
- padding: 10px 10px;
-  background-color: rgba(255, 255, 255, 0.6);
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-}
-
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
-    display: flex;
-  justify-content: center;
-}
 .rahasia {
     padding: 10px 10px;
     display: flex;

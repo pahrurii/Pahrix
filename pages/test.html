@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Mouse Events</h1>
+<h2>The clientX and clientY Properties</h2>
+
+<div style="border: 1px solid black;padding:8px" onmousemove="showCoords(event)" onmouseout="clearCoor()">
+
+<p>Mouse over this box to display the horizontal and vertical coordinates of the mouse pointer.</p>
+</div>
+
+<p id="demo"></p>
+
+<script>
+function showCoords(event) {
+  let x = event.clientX;
+  let y = event.clientY;
+  let text = "X: " + x + ", Y: " + y;
+  document.getElementById("demo").innerHTML = text;
+}
+
+function clearCoor() {
+  document.getElementById("demo").innerHTML = "";
+}
+</script>
+
+</body>
+</html>

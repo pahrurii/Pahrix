@@ -10,7 +10,10 @@
 </head>
 <body>
 <header>
+    <a href="./pages/test.html">
     <img class="header-img" src="./img/logo p.png">
+    </a>
+    <div id="clock">00:00:00</div>
 
 
     <nav>
@@ -34,14 +37,28 @@
         </ul>   
         <div class="page-link">
         <div class="image-box"></div>
-        <div class="rahasia"> this deer is intractive btw</div>
 
-                <div class="background">
-            <div class="transbox">
-            <p>This is some text that is placed in the transparent box.</p>
-        </div>
 </div>
 
+<script>
+    function updateClock() {
+    const now = new Date();
+    let h = now.getHours();
+    let m = now.getMinutes();
+    let s = now.getSeconds();
+
+    // Add leading zeros to numbers < 10
+    h = h < 10 ? '0' + h : h;
+    m = m < 10 ? '0' + m : m;
+    s = s < 10 ? '0' + s : s;
+
+    document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+}
+
+// Run the function every 1000ms (1 second)
+setInterval(updateClock, 1000);
+updateClock(); // Initial call
+</script>
 
 
 
