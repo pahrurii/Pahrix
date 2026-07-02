@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/wowo deer.png">
+    <link rel="icon" type="image/png" href="./img/wowo deer.png">
     <title>Pahrix</title>
 </head>
 <body>
     <h1>Hi lol</h1>
-    <img src="images/qwertyuiopa.png" title="Sussy baka">
+    <div class="image-box" id="btn" title="sussy baka"></div>
     <p> This site still under construction</p>
+    <p>click counter</p>
+    <p class="title" id="count">0</p>
+    <a href="main.html">Go to older page</a>
+    
+<script>
+    let counter = 0;
+
+    const button = document.getElementById("btn");
+    const resetButton = document.getElementById("resetbtn");
+    const count = document.getElementById("count");
+
+    button.addEventListener("click", function () {
+        counter++;
+        count.textContent = counter;
+    });
+
+    resetButton.addEventListener("click", function () {
+        counter = 0;
+        count.textContent = counter;
+    });
+</script>
 </body>
 </html>
